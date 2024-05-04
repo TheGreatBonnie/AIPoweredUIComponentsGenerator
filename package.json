@@ -9,18 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@copilotkit/backend": "^0.8.0",
+    "@copilotkit/react-core": "^0.24.0",
+    "@copilotkit/react-textarea": "^0.34.0",
+    "@copilotkit/react-ui": "^0.21.0",
+    "@langchain/langgraph": "^0.0.12",
+    "next": "14.2.3",
+    "openai": "^4.40.0",
     "react": "^18",
+    "react-ace": "^11.0.1",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-markdown": "^9.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "typescript": "^5"
   }
 }
