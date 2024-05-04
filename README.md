@@ -1,6 +1,10 @@
 # AI-Powered UI Components Generator
 
-The AI-powered UI components generator web app enables developers to generate Next.js Tailwind CSS UI components with an implementation tutorial. The generator has an embedded code editor where users can modify the generated code and directly see the results. The web app leverages the power of Langchain and Tavily to do web searches in order to generate accurate and up-to-date code snippets and implementation tutorials.
+The AI-powered UI components generator web app enables developers to generate Next.js Tailwind CSS UI components with an implementation tutorial. 
+
+The generator has an embedded code editor where users can modify the generated code and directly see the results. 
+
+The web app leverages the power of Langchain and Tavily AI agents to do web searches in order to generate accurate and up-to-date code snippets and implementation tutorials.
 
 Here are screenshots showing the web app in action.
 
