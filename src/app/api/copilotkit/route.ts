@@ -32,7 +32,7 @@ export async function POST(req: Request): Promise<Response> {
   const actions: AnnotatedFunction<any>[] = []; // Initialize an array to hold actions.
 
   // Check if a specific environment variable is set, indicating access to certain functionality.
-  if (process.env["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"]) {
+  if (process.env.TAVILY_API_KEY) {
     actions.push(researchAction); // Add the research action to the actions array if the condition is true.
   }
 
