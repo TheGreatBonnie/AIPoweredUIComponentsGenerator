@@ -1,8 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Powered UI Components Generator
+
+The AI-powered UI components generator web app enables developers to generate Next.js Tailwind CSS UI components with an implementation tutorial. 
+
+The generator has an embedded code editor where users can modify the generated code and directly see the results. 
+
+The web app leverages the power of Langchain and Tavily AI agents to do web searches in order to generate accurate and up-to-date code snippets and implementation tutorials.
+
+Here are screenshots showing the web app in action.
+
+## Generating Contact Form UI Component
+![demo](https://github.com/TheGreatBonnie/AIPoweredUIComponentsGenerator/assets/40994473/b3f65a7e-a03c-4700-bec6-bbdece7016a7)
+
+## Generating Contact Form UI Component Implementation Tutorial
+![demo2](https://github.com/TheGreatBonnie/AIPoweredUIComponentsGenerator/assets/40994473/67b620f6-acf1-4ae8-b032-d85307fcc177)
+
 
 ## Getting Started
 
-First, run the development server:
+First, install the packages and dependencies.
+
+```
+npm install
+```
+
+Second, create a file named .env.local on your root directory. Then add your OpenAI and Tavily API keys to the file.
+
+```
+OPENAI_API_KEY="Your OpenAI API key"
+TAVILY_API_KEY="Your Tavily API key"
+```
+
+To get the ChatGPT API key, navigate to https://platform.openai.com/api-keys.
+
+![3](https://github.com/TheGreatBonnie/AIPoweredUIComponentsGenerator/assets/40994473/77212603-1212-4b26-830c-95b64c224b77)
+
+
+To get the Tavily Search API key, navigate to https://app.tavily.com/home
+
+![4](https://github.com/TheGreatBonnie/AIPoweredUIComponentsGenerator/assets/40994473/5f316ff4-17af-4ab6-b399-61baee06e8c9)
+
+
+Finally, run the development server:
 
 ```bash
 npm run dev
@@ -15,22 +53,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
