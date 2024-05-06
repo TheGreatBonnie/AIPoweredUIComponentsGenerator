@@ -20,8 +20,9 @@ export default function CodeTutorial() {
 
   useCopilotAction(
     {
-      name: "generateCode",
-      description: "Create Code Snippet with React.js(Next.js), tailwindcss.",
+      name: "generateCodeAndImplementationTutorial",
+      description:
+        "Create Code Snippet with React.js(Next.js), tailwindcss and an implementation tutorial of the code generated.",
       parameters: [
         {
           name: "code",
@@ -29,21 +30,6 @@ export default function CodeTutorial() {
           description: "Code to be generated",
           required: true,
         },
-      ],
-      handler: async ({ code }) => {
-        setCode((prev) => [...prev, code]);
-        setCodeToDisplay(code);
-      },
-    },
-    [codeToDisplay]
-  );
-
-  useCopilotAction(
-    {
-      name: "createTutorial",
-      description:
-        "Create a step by step tutorial of the code generated earlier.",
-      parameters: [
         {
           name: "tutorial",
           type: "string",
@@ -52,36 +38,10 @@ export default function CodeTutorial() {
           required: true,
         },
       ],
-      handler: async ({ tutorial }) => {
+      handler: async ({ code, tutorial }) => {
+        setCode((prev) => [...prev, code]);
+        setCodeToDisplay(code);
         setCodeTutorial(tutorial);
-      },
-    },
-    [codeTutorial]
-  );
-
-  useCopilotAction(
-    {
-      name: "updateCodeAndTutorial",
-      description: "Update Code Snippet and tutorial generated earlier.",
-      parameters: [
-        {
-          name: "updatedCode",
-          type: "string",
-          description: "Updated code.",
-          required: true,
-        },
-        {
-          name: "updatedTutorial",
-          type: "string",
-          description: "Updated tutorial",
-          required: true,
-        },
-      ],
-      handler: async ({ updatedCode, updatedTutorial }) => {
-        setCode((prev) => [...prev, updatedCode]);
-        setCodeToDisplay(updatedCode);
-
-        setCodeTutorial(updatedTutorial);
       },
     },
     [codeToDisplay, codeTutorial]

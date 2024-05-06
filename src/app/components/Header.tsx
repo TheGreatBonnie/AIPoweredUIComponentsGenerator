@@ -14,8 +14,7 @@ export default function Header() {
               className="w-full flex-none text-xl text-white font-semibold p-6"
               href="/"
               aria-label="Brand">
-              Generate Next.js Tailwind CSS UI Components With Implementation
-              Tutorial Using AI Copilot
+              AI-UI-Components-Generator
             </Link>
           </div>
         </nav>
