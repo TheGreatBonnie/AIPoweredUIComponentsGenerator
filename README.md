@@ -53,3 +53,5 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Check out [this tutorial on DevTo](https://dev.to/the_greatbonnie/ai-powered-frontend-ui-components-generator-nextjs-gpt4-langchain-copilotkit-1hac) on how to build the UI Components Generator.
